@@ -155,5 +155,11 @@ print("var14:",var14)
 var15 = tuple({1:2,3:4}) #转化为元组 （字典会返回key组成的元组）
 print("var15:",var15)
 
+# aTuple = (123, 'xyz', 'zzz', 'abc');
+# aList = list(aTuple)
+# print ("列表元素 : ", aList)
+
+#其他转换参考
+
 
 
