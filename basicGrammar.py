@@ -3,10 +3,9 @@
 '''
 多行注释
 '''
-from pip._vendor.distlib.compat import raw_input
 
 #输入
-input = raw_input("按下 enter 键退出，其他任意键显示...\n")
+# input = raw_input("按下 enter 键退出，其他任意键显示...\n")
 
 #输出
 #print 默认输出是换行的，如果要实现不换行需要在变量末尾加上逗号
