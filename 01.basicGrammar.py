@@ -22,6 +22,7 @@ import sys;x = 'hello';sys.stdout.write(x+'\n')
 如下实例：
 '''
 
+
 #严格代码缩进
 flage = 1
 if flage == 1:
