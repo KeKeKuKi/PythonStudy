@@ -1,1 +1,1 @@
-print("studyPackge初始化")
+print("studyPackge包__init__.py初始化")
