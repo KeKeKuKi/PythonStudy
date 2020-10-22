@@ -1,0 +1,1 @@
+print("studyPackge初始化")
