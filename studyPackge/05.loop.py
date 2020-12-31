@@ -39,10 +39,10 @@ print("-------------------------")
 print("99乘法表")
 print("-------------------------")
 tip = 1
-for x in range(1,10):
+for x in range(1, 10):
     y = 1
     while y <= tip:
-        print(y,"*",x,"=",x * y, end='   ')
+        print(y, "*", x, "=", x * y, end='   ')
         y += 1
     else:
         print()
@@ -56,7 +56,7 @@ print("费布拉契数列")
 print("-------------------------")
 one, two = 0, 1
 while two in range(1000):
-    print(one,end=" ")
+    print(one, end=" ")
     one, two = two, two+one  #注意赋值的先后机制
 else:
     print(one)

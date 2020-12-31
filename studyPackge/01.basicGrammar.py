@@ -10,7 +10,7 @@
 #输出
 #print 默认输出是换行的，如果要实现不换行需要在变量末尾加上逗号
 print(input)
-print("不换行","换行")
+print("不换行", "换行")
 
 #多条语句使用分号分隔
 import sys;x = 'hello';sys.stdout.write(x+'\n')

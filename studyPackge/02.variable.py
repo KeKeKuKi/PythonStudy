@@ -7,16 +7,27 @@ Python 中的变量赋值不需要类型声明。
 等号（=）运算符左边是一个变量名,等号（=）运算符右边是存储在变量中的值。例如：
 '''
 
-counter = 100 #整型
-miles = 100.01 #浮点型
-name = "Tom" #字符串
+counter = 100 # 整型
+miles = 100.01 # 浮点型
+name = "Tom" # 字符串
 
-#Python允许你同时为多个变量赋值。例如：
+# Python允许你同时为多个变量赋值。例如：
 a = b = c = 1
-e, f, g = 1, 1.0, "str"
+e, f, g = 1, 1.0, 'str'
+dict = {'name': 'zs', 'sex': '男'}
 
+set = {1, 2.0, 'str', 'str'}
+list = [1, 2.0, 'str', 'str', dict]
+yu = (1, 2.0, 'str', 'str')
+
+print("list：", list)
+print("set:", set)
+print("yu：", yu)
+
+print("dict:", dict)
 '''
 Python 数据类型
+
 Python 定义了一些标准类型，用于存储各种类型的数据。
 Python有五个标准的数据类型：
 Numbers（数字）
@@ -37,6 +48,7 @@ complex（复数）
 '''
 var1 = 1
 var2 = 2.0
+
 #您也可以使用del语句删除一些对象的引用。
 #del语句的语法是：del var1[,var2[,var3[....,varN]]]]
 del var1, var2
@@ -46,22 +58,23 @@ python 不再支持Long类型 合并到了int类型
 Python 还支持复数，复数由实数部分和虚数部分构成，可以用 a + bj,或者 complex(a,b) 表示， 复数的实部 a 和虚部 b 都是浮点型。
 '''
 var3 = 1 + 1j #复数
-var4 = complex(1,1) #复数
+var4 = complex(1, 1) #复数
 flage = var3 == var4
-print ("-----------------------------------------")
-print("var3 == var4 : ",flage)
+print(type(flage))
+print("-----------------------------------------")
+print("var3 == var4 : ", flage)
 
 '''
 Python字符串
 字符串或串(String)是由数字、字母、下划线组成的一串字符。
 一般记为 :
-s="a1a2···an"(n>=0)
+s="1aa2···an"(n>=0)
 它是编程语言中表示文本的数据类型。
 python的字串列表有2种取值顺序:
 从左到右索引默认0开始的，最大范围是字符串长度少1
 从右到左索引默认-1开始的，最大范围是字符串开头
 例如：
-var = "hello"
+var = 'hello'
  h  e  l  l  o
  0  1  2  3  4
 -5 -4 -3 -2 -1
@@ -70,15 +83,17 @@ var = "hello"
 其中下标是从 0 开始算起，可以是正数或负数，下标可以为空表示取到头或尾。
 [头下标:尾下标] 获取的子字符串包含头下标的字符，但不包含尾下标的字符。
 '''
-var5 = "abcdefgh"[0:3]
+strxxx = 'abcde'
+print(strxxx[-4])
+var5 = "abcdefgh"[0:5]
 var6 = "abcdefgh"[-8:-5]
-print ("-----------------------------------------")
-print("var5:",var5)
-print("var6:",var6)
-#Python 列表截取可以接收第三个参数，参数作用是截取的步长，以下实例在索引 0 到索引 5 的位置并设置为步长为 2（间隔一个位置）来截取字符串：
+print("-----------------------------------------")
+print("var5:", var5)
+print("var6:", var6)
+#Python 列表截取可以接收第三个参数，参数作用是截取的步长，以下实例在索引 0 到索引 5 的位置并设置为步长为 2（间隔）来截取字符串：
 
-var7 = "abcdef"[0:5:2]
-print("var7:",var7)
+var7 = "abcdef"[0:5:3]
+print("var7:", var7)
 
 '''
 Python列表
@@ -98,13 +113,13 @@ var t = ['a','b','c','d','e']
 '''
 list = ['runoob', 786, 2.23, 'john', 70.2]
 tinylist = [123, 'john']
-print ("-----------------------------------------")
-print (list)  # 输出完整列表
-print (list[0])  # 输出列表的第一个元素
-print (list[1:3]) # 输出第二个至第三个元素
-print (list[2:])  # 输出从第三个开始至列表末尾的所有元素
-print (tinylist * 2)  # 输出列表两次
-print (list + tinylist)  # 打印组合的列表
+print("-----------------------------------------")
+print(list)  # 输出完整列表
+print(list[0])  # 输出列表的第一个元素
+print(list[1:3]) # 输出第二个至第三个元素
+print(list[2:])  # 输出从第三个开始至列表末尾的所有元素
+print(tinylist * 2)  # 输出列表
+print(list + tinylist)  # 打印组合的列表
 
 '''
 Python 字典
@@ -115,44 +130,43 @@ Python 字典
 dict = {}
 dict['one'] = "This is one"
 dict[2] = "This is two"
-tinydict = {'name': 'runoob','code':6734, 'dept': 'sales'}
-print ("-----------------------------------------")
-print (dict['one'])          # 输出键为'one' 的值
-print (dict[2])              # 输出键为 2 的值
-print (tinydict)             # 输出完整的字典
-print (tinydict.keys())      # 输出所有键
-print (tinydict.values())    # 输出所有值
+tinydict = {'name': 'runoob', 'code': 6734, 'dept': 'sales'}
+print("-----------------------------------------")
+print(dict['one'])          # 输出键为'one' 的值
+print(dict[2])              # 输出键为 2 的值
+print(tinydict)             # 输出完整的字典
+print(tinydict.keys())      # 输出所有键
+print(tinydict.values())    # 输出所有值
 
 '''
 Python数据类型转换
 有时候，我们需要对数据内置的类型进行转换，数据类型的转换，你只需要将数据类型作为函数名即可。
 以下几个内置的函数可以执行数据类型之间的转换。这些函数返回一个新的对象，表示转换的值。
 '''
-print ("-----------------------------------------")
-x = "101"
+print("-----------------------------------------")
+x = "1010"
+var8 = int(x, 2) # 第二个参数为x的进制
+print("var8:", var8)
 
-var8 = int(x,2) #第二个参数为x的进制
-print("var8:",var8)
-
-var9 = int(x,10)
-print("var9:",var9)
+var9 = int(x, 10)
+print("var9:", var9)
 
 var10 = float(x) #转化为浮点型
-print("var10:",var10)
+print("var10:", var10)
 
-var11 = complex(1,1)
-print("var11:",var11)
+var11 = complex(1, 1)
+print("var11:", var11)
 
 var12 = str(11)
 print("var12:",var12)
 
 var13 = repr({'one' : 1, 'two' : 2}) #转换为表达式字符串
-print("var13:",var13)
+print("var13:", var13)
 
-var14 = chr(33) #转换为字符
-print("var14:",var14)
+var14 = chr(11110) #转换为字符
+print("var14:", var14)
 
-var15 = tuple({1:2,3:4}) #转化为元组 （字典会返回key组成的元组）
+var15 = tuple({1: 2, 3: 4}) #转化为元组 （字典会返回key组成的元组）
 print("var15:",var15)
 
 # aTuple = (123, 'xyz', 'zzz', 'abc');

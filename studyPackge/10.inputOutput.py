@@ -74,9 +74,9 @@ print("文件内容：", text)
 print("再读一行内容：", line)
 file.close()
 print('------------------------------')
-file = open('hello.txt', 'r')
-for line in file:
-    print("循环读取：",line)
+
+
+
 # filename：包含了你要访问的文件名称的字符串值。
 # mode：决定了打开文件的模式：只读，写入，追加等。所有可取值见如下的完全列表。这个参数是非强制的，默认文件访问模式为只读(r)。
 '''
