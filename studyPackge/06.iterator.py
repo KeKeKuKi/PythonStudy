@@ -7,21 +7,21 @@
 字符串，列表或元组对象都可用于创建迭代器：
 '''
 
-list=[1,2,3,4]
-it = iter(list)    # 创建迭代器对象
-print (next(it))   # 输出迭代器的下一个元素
-print (next(it))
+list0 = [1, 2, 3, 4]
+it = iter(list0)    # 创建迭代器对象
+print(next(it))   # 输出迭代器的下一个元素
+print(next(it))
 
-#iter可以使用for循环遍历
-list=[1,2,3,4]
-it = iter(list)    # 创建迭代器对象
+# iter可以使用for循环遍历
+list1 = [1,2,3,4]
+it = iter(list1)    # 创建迭代器对象
 for x in it:
-    print (x, end=" ")
+    print(x, end=" ")
 
-#同时也可以使用next()函数进行遍历
+# 同时也可以使用next()函数进行遍历
 import sys  # 引入 sys 模块
-list = [1, 2, 3, 4]
-it = iter(list)  # 创建迭代器对象
+list2 = [1, 2, 3, 4]
+it = iter(list2)  # 创建迭代器对象
 # while True:
 #     try:
 #         print(next(it))
@@ -64,8 +64,8 @@ print(next(myiter))
 以下实例使用 yield 实现斐波那契数列：
 '''
 import sys
-
-def fibonacci(n): # 生成器函数 - 斐波那契
+# 生成器函数 - 斐波那契
+def fibonacci(n):
     a, b, counter = 0, 1, 0
     while True:
         if (counter > n):
@@ -73,10 +73,10 @@ def fibonacci(n): # 生成器函数 - 斐波那契
         yield a
         a, b = b, a + b
         counter += 1
-f = fibonacci(10) # f 是一个迭代器，由生成器返回生成
-
+# f 是一个迭代器，由生成器返回生成
+f = fibonacci(10)
 while True:
     try:
-        print (next(f), end=" ")
+        print(next(f), end=" ")
     except StopIteration:
         sys.exit()
