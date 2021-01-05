@@ -6,7 +6,7 @@ Python3 模块
 下面是一个使用 python 标准库中模块的例子。
 '''
 import sys
-from studyPackge.modulTset import *
+from studyPackge.pythonBasic.modulTset import *
 #
 # print('--------------------------------')
 # for i in sys.argv:
