@@ -53,7 +53,7 @@ print("stack:", stack)
 print("-------------------------------")
 list = [1, 2, 3, 4]
 list1 = [3*x for x in list]
-list2 = [[x,2*x] for x in list]
+list2 = [[x, 2*x] for x in list]
 print("list1:", list1)
 print("list2:", list2)
 
@@ -79,7 +79,7 @@ list7 = [[1,  2,  3,  4],
          [5,  6,  7,  8],
          [9,  10, 11, 12]]
 list8 = [[row[i] for row in list7] for i in range(4)]
-print("list8:",list8)
+print("list8:", list8)
 
 '''
 del 语句
@@ -108,7 +108,7 @@ print("--------------------------------")
 #自动去除重复元素
 baskset = {"hello","asdasd","akkksjad","hello"}
 print(baskset)
-print("asdasd in baskset:","asdasd" in baskset)
+print("asdasd in baskset:", "asdasd" in baskset)
 
 charArray1 = set('ashdbkanlahfhu')
 charArray2 = set('hjhgbsafhei')

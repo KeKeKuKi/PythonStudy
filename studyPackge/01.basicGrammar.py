@@ -4,15 +4,15 @@
 多行注释
 '''
 
-#输入
+# 输入
 # input = raw_input("按下 enter 键退出，其他任意键显示...\n")
 
-#输出
-#print 默认输出是换行的，如果要实现不换行需要在变量末尾加上逗号
+# 输出
+# print 默认输出是换行的，如果要实现不换行需要在变量末尾加上逗号
 print(input)
 print("不换行", "换行")
 
-#多条语句使用分号分隔
+# 多条语句使用分号分隔
 import sys;x = 'hello';sys.stdout.write(x+'\n')
 
 '''
@@ -22,8 +22,7 @@ import sys;x = 'hello';sys.stdout.write(x+'\n')
 如下实例：
 '''
 
-
-#严格代码缩进
+# 严格代码缩进
 flage = 1
 if flage == 1:
     print("1")

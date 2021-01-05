@@ -9,7 +9,7 @@ compile 函数根据一个模式字符串和可选的标志参数生成一个正
 re 模块也提供了与这些方法功能完全一致的函数，这些函数使用一个模式字符串做为它们的第一个参数。
 '''
 pattern = '\\b((?!\\d\\d\\d)\\d+|1\\d\\d|2[0-4]\\d|25[0-5])\\.((?!\\d\\d\\d)\\d+|1\\d\\d|2[0-4]\\d|25[0-5])\\b'
-str = '192.168'
+str = '192.254'
 if re.match(pattern, str):
     print('匹配！')
 else:
@@ -20,7 +20,7 @@ re.match与re.search的区别
 re.match 只匹配字符串的开始，如果字符串开始不符合正则表达式，则匹配失败，函数返回 None，而 re.search 匹配整个字符串，直到找到一个匹配。
 '''
 str2 = 'sss192.168'
-if re.search(pattern,str2):
+if re.search(pattern, str2):
     print("找到匹配！")
 else:
     print("未找到匹配!")
